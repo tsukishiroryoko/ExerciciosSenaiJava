@@ -7,8 +7,6 @@ public class Pessoa {
     private int cpf;
     private int idade;
     private String dataNasc;
-    private char sexo;
-    private String cidadeNasc;
 
     public String getNome() {
         return this.nome;
@@ -34,26 +32,11 @@ public class Pessoa {
     public void setDataNasc(String dataNasc) {
         this.dataNasc = dataNasc;
     }
-    public char getSexo() {
-        return this.sexo;
-    }
-    public void setSexo(char sexo) {
-        this.sexo = sexo;
-    }
-    public String getCidadeNasc() {
-        return this.cidadeNasc;
-    }
-    public void setCidadeNasc(String cidadeNasc) {
-        this.cidadeNasc = cidadeNasc;
-    }
-
     @Override
     public String toString() {
         return "Nome: " + getNome() + "\n" +
                 "Idade: " + getIdade() + "\n" +
-                "Data de Nascimento: " + getDataNasc() + "\n" +
-                "Sexo: " + getSexo() + "\n" +
-                "Cidade de Nascimento: : " + getCidadeNasc() + "\n";
+                "Data de Nascimento: " + getCpf() + "\n";
 
     }
 }
